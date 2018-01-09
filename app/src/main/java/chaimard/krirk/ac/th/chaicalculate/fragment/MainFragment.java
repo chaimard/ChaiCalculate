@@ -7,6 +7,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 import chaimard.krirk.ac.th.chaicalculate.MainActivity;
 import chaimard.krirk.ac.th.chaicalculate.R;
@@ -25,8 +27,44 @@ public class MainFragment extends Fragment{
 //        Create toolbar
         createToolbar();
 
+        //        ShowName Controller
+        showNameController();
+
+//Calculate Controller
+        calculateController();
 
     }   //main method
+
+    private void calculateController() {
+        Button button = getView().findViewById(R.id.btnCalculate);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                getActivity().getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.contentMainFragment, new CalculateFragment())
+                        .addToBackStack(null)
+                        .commit();
+
+            }
+        });
+
+
+    }
+
+    private void showNameController() {
+        Button button = getView().findViewById(R.id.btnShowName);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TextView textView = getView().findViewById(R.id.txtShowName);
+                textView.setText("Chaimard");
+
+
+            }
+        });
+    }
 
     private void createToolbar() {
 

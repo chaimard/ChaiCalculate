@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context="chaimard.krirk.ac.th.chaicalculate.MainActivity">
 
+  <!--WallPaper-->
+  <ImageView
+      android:src="@drawable/bg"
+      android:scaleType="centerCrop"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+
   <!--content of fragment -->
     <FrameLayout
         android:id="@+id/contentMainFragment"
