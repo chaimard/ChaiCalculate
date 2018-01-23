@@ -28,19 +28,22 @@
 
             <!--Display-->
             <TextView
+                android:maxLines="1"
+                android:id="@+id/txtDisplay"
                 android:textColor="#ffffff"
                 android:padding="@dimen/padding"
                 android:gravity="end"
                 android:layout_weight="3"
                 android:textStyle="bold"
                 android:textSize="50sp"
-                android:text="12345"
+                android:text=""
                 android:layout_width="0dp"
                 android:layout_height="wrap_content" />
 
 
             <!--Clear Button-->
             <Button
+                android:id="@+id/btnC"
                 android:layout_weight="1"
                 android:textSize="@dimen/h1"
                 android:text="C"
@@ -60,6 +63,7 @@
 
             <!--button7-->
             <Button
+                android:id="@+id/btn7"
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:text="7"
@@ -68,6 +72,7 @@
                 android:layout_height="match_parent" />
             <!--button8-->
             <Button
+                android:id="@+id/btn8"
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:text="8"
@@ -76,6 +81,7 @@
                 android:layout_height="match_parent" />
             <!--button9-->
             <Button
+                android:id="@+id/btn9"
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:text="9"
@@ -84,6 +90,7 @@
                 android:layout_height="match_parent" />
             <!--button/-->
             <Button
+                android:id="@+id/btnDivide"
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:text="/"
@@ -103,6 +110,7 @@
 
             <!--button4-->
             <Button
+                android:id="@+id/btn4"
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:text="4"
@@ -111,6 +119,7 @@
                 android:layout_height="match_parent" />
             <!--button5-->
             <Button
+                android:id="@+id/btn5"
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:text="5"
@@ -119,6 +128,7 @@
                 android:layout_height="match_parent" />
             <!--button6-->
             <Button
+                android:id="@+id/btn6"
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:text="6"
@@ -127,6 +137,7 @@
                 android:layout_height="match_parent" />
             <!--button x-->
             <Button
+                android:id="@+id/btnMultiply"
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:text="x"
@@ -146,36 +157,40 @@
 
             <!--button4-->
             <Button
+                android:id="@+id/btn1"
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:text="1"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent" />
             <!--button5-->
             <Button
+                android:id="@+id/btn2"
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:text="2"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent" />
             <!--button6-->
             <Button
+                android:id="@+id/btn3"
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:text="3"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent" />
             <!--button x-->
             <Button
+                android:id="@+id/btnAdd"
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:text="+"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent" />
         </LinearLayout>
 
         <!--Row5-->
@@ -188,6 +203,7 @@
 
             <!--button4-->
             <Button
+                android:id="@+id/btn0"
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:text="0"
@@ -196,6 +212,7 @@
                 android:layout_height="match_parent" />
             <!--button5-->
             <Button
+                android:id="@+id/btnEqual"
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:text="="
@@ -204,6 +221,7 @@
                 android:layout_height="match_parent" />
             <!--button5-->
             <Button
+                android:id="@+id/btnMinus"
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:text="-"
