@@ -260,6 +260,7 @@ public class CalculateFragment extends Fragment implements View.OnClickListener 
                 textView.setText(Double.toString(num1ADouble));
                 displayString = "0";
 
+
                 break;
 
             case R.id.btnMinus:
